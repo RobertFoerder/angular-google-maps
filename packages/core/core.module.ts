@@ -13,6 +13,7 @@ import { AgmPolyline } from './directives/polyline';
 import { AgmPolylineIcon } from './directives/polyline-icon';
 import { AgmPolylinePoint } from './directives/polyline-point';
 import { AgmRectangle } from './directives/rectangle';
+import { AgmSearchBox } from './directives/search-box';
 import { AgmTransitLayer } from './directives/transit-layer';
 
 import { LAZY_MAPS_API_CONFIG, LazyMapsAPILoader, LazyMapsAPILoaderConfigLiteral } from './services/maps-api-loader/lazy-maps-api-loader';
@@ -39,6 +40,7 @@ export function coreDirectives() {
     AgmPolylinePoint,
     AgmRectangle,
     AgmTransitLayer,
+    AgmSearchBox,
   ];
 }
 

@@ -208,6 +208,10 @@ export class GoogleMapsAPIWrapper {
     });
   }
 
+  getControls(): Promise<mapTypes.MVCArray<Node>[]> {
+    return this._map.then((map: mapTypes.GoogleMap) => map.controls);
+  }
+
   panTo(latLng: mapTypes.LatLng | mapTypes.LatLngLiteral): Promise<void> {
     return this._zone.runOutsideAngular(() => {
       return this._map.then((map) => map.panTo(latLng));

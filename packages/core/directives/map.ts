@@ -19,6 +19,7 @@ import { PolylineManager } from '../services/managers/polyline-manager';
 import { RectangleManager } from '../services/managers/rectangle-manager';
 import { DataLayerManager } from './../services/managers/data-layer-manager';
 import { KmlLayerManager } from './../services/managers/kml-layer-manager';
+import { SearchBoxManager } from './../services/managers/search-box-manager';
 
 declare var google: any;
 
@@ -60,6 +61,7 @@ declare var google: any;
     PolygonManager,
     PolylineManager,
     RectangleManager,
+    SearchBoxManager,
   ],
   host: {
     // todo: deprecated - we will remove it with the next version
